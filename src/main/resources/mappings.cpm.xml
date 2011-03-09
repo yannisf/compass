@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE compass-core-mapping PUBLIC   "-//Compass/Compass Core Mapping DTD 2.2//EN"
+    "http://www.compass-project.org/dtd/compass-core-mapping-2.2.dtd">
+
+<compass-core-mapping package="gr.fragsoft.model">
+
+	<class name="Company" alias="company" root="true" support-unmarshall="false">
+
+		<id name="id">
+			<meta-data>company_id</meta-data>
+		</id>
+
+		<property name="name">
+			<meta-data>company_name</meta-data>
+		</property>
+
+		<reference name="employees"/>
+	</class>
+
+	<class name="Employee" alias="employee" root="true" support-unmarshall="false">
+	<!-- -->
+		<id name="id">
+			<meta-data>employee_id</meta-data>
+		</id>
+		
+		<property name="name">
+			<meta-data>employee_name</meta-data>
+		</property>
+
+	</class>
+
+</compass-core-mapping>
